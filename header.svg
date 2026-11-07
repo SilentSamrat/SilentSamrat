@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 185" width="100%">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; rx: 14px; }
+      .title-text { fill: #8b949e; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+      .label-text { fill: #6e7681; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; }
+
+      /* Matrix Legend Palette */
+      .c-off { fill: #161b22; rx: 2px; }
+      .c-dim { fill: #0e4429; rx: 2px; }
+      .c-med { fill: #006d32; rx: 2px; }
+      .c-high { fill: #2ea043; rx: 2px; }
+      .c-bright { fill: #39d353; rx: 2px; }
+
+      /* Solid Structural Backbone (100% Bright, Never Dims) */
+      .t-solid { fill: #39d353; rx: 2px; opacity: 1; }
+
+      /* Controlled High-Legibility Glow (Stays >75% Brightness) */
+      @keyframes softGlowA {
+        0%, 100% { fill: #39d353; opacity: 1; }
+        50% { fill: #2ea043; opacity: 0.8; }
+      }
+      @keyframes softGlowB {
+        0%, 100% { fill: #2ea043; opacity: 0.75; }
+        50% { fill: #39d353; opacity: 1; }
+      }
+      @keyframes ambientFlicker {
+        0%, 100% { fill: #0e4429; opacity: 0.3; }
+        50% { fill: #006d32; opacity: 0.75; }
+      }
+
+      .g1 { fill: #39d353; rx: 2px; animation: softGlowA 2.5s infinite ease-in-out; }
+      .g2 { fill: #39d353; rx: 2px; animation: softGlowB 3.2s infinite ease-in-out 0.6s; }
+      .n-amb { fill: #0e4429; rx: 2px; animation: ambientFlicker 3.8s infinite ease-in-out 0.4s; }
+    </style>
+
+    <!-- Matrix Background Grid Pattern -->
+    <pattern id="matrix-grid" width="12.5" height="12.5" patternUnits="userSpaceOnUse">
+      <rect width="9.5" height="9.5" rx="2" fill="#161b22" />
+    </pattern>
+  </defs>
+
+  <!-- Container -->
+  <rect class="bg" width="920" height="185" />
+
+  <!-- Subtitle -->
+  <text x="60" y="34" class="title-text">Always Learning</text>
+
+  <!-- Day Labels -->
+  <text x="22" y="73" class="label-text">Mon</text>
+  <text x="22" y="98" class="label-text">Wed</text>
+  <text x="22" y="123" class="label-text">Fri</text>
+
+  <!-- Background Unlit Matrix Grid -->
+  <rect x="60" y="52" width="800" height="87.5" fill="url(#matrix-grid)" />
+
+  <!-- Active Matrix Layer: SILENT.SAMRAT -->
+  <g transform="translate(60, 52)">
+
+    <!-- S -->
+    <rect x="0" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="12.5" y="0" class="g1" width="9.5" height="9.5" />
+    <rect x="25" y="0" class="g2" width="9.5" height="9.5" />
+    <rect x="37.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="0" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="0" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="0" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="12.5" y="37.5" class="g1" width="9.5" height="9.5" />
+    <rect x="25" y="37.5" class="g2" width="9.5" height="9.5" />
+    <rect x="37.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="37.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="37.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="0" y="75" class="t-solid" width="9.5" height="9.5" />
+    <rect x="12.5" y="75" class="g2" width="9.5" height="9.5" />
+    <rect x="25" y="75" class="g1" width="9.5" height="9.5" />
+    <rect x="37.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- I -->
+    <rect x="62.5" y="0" class="g1" width="9.5" height="9.5" />
+    <rect x="75" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="87.5" y="0" class="g2" width="9.5" height="9.5" />
+    <rect x="75" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="75" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="75" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="75" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="75" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="62.5" y="75" class="g2" width="9.5" height="9.5" />
+    <rect x="75" y="75" class="t-solid" width="9.5" height="9.5" />
+    <rect x="87.5" y="75" class="g1" width="9.5" height="9.5" />
+
+    <!-- L -->
+    <rect x="112.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="112.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="112.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="112.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="112.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="112.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="112.5" y="75" class="t-solid" width="9.5" height="9.5" />
+    <rect x="125" y="75" class="g1" width="9.5" height="9.5" />
+    <rect x="137.5" y="75" class="g2" width="9.5" height="9.5" />
+    <rect x="150" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- E -->
+    <rect x="175" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="187.5" y="0" class="g1" width="9.5" height="9.5" />
+    <rect x="200" y="0" class="g2" width="9.5" height="9.5" />
+    <rect x="212.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="175" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="175" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="175" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="187.5" y="37.5" class="g1" width="9.5" height="9.5" />
+    <rect x="200" y="37.5" class="g2" width="9.5" height="9.5" />
+    <rect x="175" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="175" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="175" y="75" class="t-solid" width="9.5" height="9.5" />
+    <rect x="187.5" y="75" class="g2" width="9.5" height="9.5" />
+    <rect x="200" y="75" class="g1" width="9.5" height="9.5" />
+    <rect x="212.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- N (Clean Crisp 5x7 Matrix) -->
+    <rect x="237.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="237.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="237.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="237.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="237.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="237.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="237.5" y="75" class="t-solid" width="9.5" height="9.5" />
+    
+    <rect x="250" y="12.5" class="g1" width="9.5" height="9.5" />
+    <rect x="262.5" y="25" class="g2" width="9.5" height="9.5" />
+    <rect x="262.5" y="37.5" class="g1" width="9.5" height="9.5" />
+    <rect x="275" y="50" class="g2" width="9.5" height="9.5" />
+    
+    <rect x="287.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="287.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="287.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="287.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="287.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="287.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="287.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- T -->
+    <rect x="312.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="325" y="0" class="g1" width="9.5" height="9.5" />
+    <rect x="337.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="350" y="0" class="g2" width="9.5" height="9.5" />
+    <rect x="362.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="337.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="337.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="337.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="337.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="337.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="337.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- SINGLE BASELINE DOT (.) -->
+    <rect x="387.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- S -->
+    <rect x="412.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="425" y="0" class="g1" width="9.5" height="9.5" />
+    <rect x="437.5" y="0" class="g2" width="9.5" height="9.5" />
+    <rect x="450" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="412.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="412.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="412.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="425" y="37.5" class="g1" width="9.5" height="9.5" />
+    <rect x="437.5" y="37.5" class="g2" width="9.5" height="9.5" />
+    <rect x="450" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="450" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="450" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="412.5" y="75" class="t-solid" width="9.5" height="9.5" />
+    <rect x="425" y="75" class="g2" width="9.5" height="9.5" />
+    <rect x="437.5" y="75" class="g1" width="9.5" height="9.5" />
+    <rect x="450" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- A -->
+    <rect x="487.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="500" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="475" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="512.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="475" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="512.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="475" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="487.5" y="37.5" class="g1" width="9.5" height="9.5" />
+    <rect x="500" y="37.5" class="g2" width="9.5" height="9.5" />
+    <rect x="512.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="475" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="512.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="475" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="512.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="475" y="75" class="t-solid" width="9.5" height="9.5" />
+    <rect x="512.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- M -->
+    <rect x="537.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="537.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="537.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="537.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="537.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="537.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="537.5" y="75" class="t-solid" width="9.5" height="9.5" />
+    
+    <rect x="550" y="12.5" class="g1" width="9.5" height="9.5" />
+    <rect x="562.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="575" y="12.5" class="g2" width="9.5" height="9.5" />
+    
+    <rect x="587.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="587.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="587.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="587.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="587.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="587.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="587.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- R -->
+    <rect x="612.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="612.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="612.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="612.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="612.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="612.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="612.5" y="75" class="t-solid" width="9.5" height="9.5" />
+    
+    <rect x="625" y="0" class="g1" width="9.5" height="9.5" />
+    <rect x="637.5" y="0" class="g2" width="9.5" height="9.5" />
+    <rect x="650" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="650" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="637.5" y="37.5" class="g1" width="9.5" height="9.5" />
+    <rect x="625" y="37.5" class="g2" width="9.5" height="9.5" />
+    <rect x="637.5" y="50" class="g1" width="9.5" height="9.5" />
+    <rect x="650" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="650" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- A -->
+    <rect x="687.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="700" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="675" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="712.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="675" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="712.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="675" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="687.5" y="37.5" class="g1" width="9.5" height="9.5" />
+    <rect x="700" y="37.5" class="g2" width="9.5" height="9.5" />
+    <rect x="712.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="675" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="712.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="675" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="712.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="675" y="75" class="t-solid" width="9.5" height="9.5" />
+    <rect x="712.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- T -->
+    <rect x="737.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="750" y="0" class="g1" width="9.5" height="9.5" />
+    <rect x="762.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="775" y="0" class="g2" width="9.5" height="9.5" />
+    <rect x="787.5" y="0" class="t-solid" width="9.5" height="9.5" />
+    <rect x="762.5" y="12.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="762.5" y="25" class="t-solid" width="9.5" height="9.5" />
+    <rect x="762.5" y="37.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="762.5" y="50" class="t-solid" width="9.5" height="9.5" />
+    <rect x="762.5" y="62.5" class="t-solid" width="9.5" height="9.5" />
+    <rect x="762.5" y="75" class="t-solid" width="9.5" height="9.5" />
+
+    <!-- Ambient Grid Flicker -->
+    <rect x="50" y="25" class="n-amb" width="9.5" height="9.5" />
+    <rect x="100" y="50" class="n-amb" width="9.5" height="9.5" />
+    <rect x="162.5" y="12.5" class="n-amb" width="9.5" height="9.5" />
+    <rect x="225" y="37.5" class="n-amb" width="9.5" height="9.5" />
+    <rect x="300" y="62.5" class="n-amb" width="9.5" height="9.5" />
+    <rect x="375" y="12.5" class="n-amb" width="9.5" height="9.5" />
+    <rect x="400" y="37.5" class="n-amb" width="9.5" height="9.5" />
+    <rect x="462.5" y="12.5" class="n-amb" width="9.5" height="9.5" />
+    <rect x="525" y="50" class="n-amb" width="9.5" height="9.5" />
+    <rect x="600" y="12.5" class="n-amb" width="9.5" height="9.5" />
+    <rect x="662.5" y="37.5" class="n-amb" width="9.5" height="9.5" />
+    <rect x="725" y="50" class="n-amb" width="9.5" height="9.5" />
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(775, 158)">
+    <text x="0" y="9" class="label-text">Less</text>
+    <rect x="28" y="0" class="c-off" width="9.5" height="9.5" />
+    <rect x="40.5" y="0" class="c-dim" width="9.5" height="9.5" />
+    <rect x="53" y="0" class="c-med" width="9.5" height="9.5" />
+    <rect x="65.5" y="0" class="c-high" width="9.5" height="9.5" />
+    <rect x="78" y="0" class="c-bright" width="9.5" height="9.5" />
+    <text x="93" y="9" class="label-text">More</text>
+  </g>
+</svg>
